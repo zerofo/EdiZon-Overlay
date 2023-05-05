@@ -30,7 +30,7 @@ jobs:
                docker run -t --rm --name builder -v `pwd`:`pwd` -w `pwd` zerofo/ns_dev:0.9b2 make install
                mkdir -p switch/.overlays/
                ls out
-               cp out/*.ovl switch/.overlays/
+               cp out/*.nro switch/.overlays/EdiZon-Overlay.ovl
                zip -r EdiZon-Overlay.zip switch
                 
         - name: Upload file

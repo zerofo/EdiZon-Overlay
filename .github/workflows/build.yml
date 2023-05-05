@@ -27,10 +27,10 @@ jobs:
           env:
               SKIP_LOGIN: true
         - run: |
-               docker run -t --rm --name builder -v `pwd`:`pwd` -w `pwd` zerofo/ns_dev:0.9b2 make
+               docker run -t --rm --name builder -v `pwd`:`pwd` -w `pwd` zerofo/ns_dev:0.9b2 make all
                mkdir -p switch/.overlays/
-               ls
-               cp *.ovl switch/.overlays/
+               ls out
+               cp out/*.ovl switch/.overlays/
                zip -r EdiZon-Overlay.zip switch
                 
         - name: Upload file

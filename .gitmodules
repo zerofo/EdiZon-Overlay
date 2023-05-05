@@ -3,4 +3,4 @@
 	url = https://github.com/tomvita/EdiZon-SE.git
 [submodule "libs/libtesla"]
 	path = libs/libtesla
-	url = https://github.com/WerWolv/libtesla.git
+	url = https://github.com/zerofo/libtesla

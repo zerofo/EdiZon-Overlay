@@ -28,7 +28,7 @@ jobs:
           apt update
           apt install -y libjson-c-dev
           dkp-pacman -Syu --noconfirm
-          dkp-pacman -Syu --noconfirm switch-dev deko3d devkita64-cmake switch-cmake switch-pkg-config devkitA64 devkitA64-gdb switch-tools general-tools uam devkitARM devkitARM-gdb devkitarm-rules switch-portlibs devkitARM switch-curl switch-zziplib switch-mbedtls switch-jansson
+          dkp-pacman -Syu --noconfirm switch-curl switch-zziplib switch-mbedtls switch-jansson
           git config --global --add safe.directory `pwd`
           git submodule update --remote && make -j2
           ls
